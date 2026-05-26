@@ -49,10 +49,10 @@ function App() {
                             <AnimatedTitle />
                         </h1>
                         <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto md:mx-0 mb-6 leading-relaxed">
-                            I build beautiful, functional, and accessible digital experiences. Check out my latest projects below.
+                            Multidisciplinary Game Developer with years of experience and a passion for creating unforgettable interactive experiences.
                         </p>
                         <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
-                            <a href="https://jrandmaa.github.io/Jack%20Randmaa%20Resume%202025.pdf" rel="noopener noreferrer" className="btn btn-primary text-base px-6 py-3 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all font-semibold">
+                            <a href="https://jrandmaa.github.io/Jack%20Randmaa%20Resume%202025.pdf" className="btn btn-primary text-base px-6 py-3 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all font-semibold">
                                 My Resume
                             </a>
                             <a href="https://github.com/jrandmaa" target="_blank" rel="noopener noreferrer" className="btn btn-outline bg-white/50 backdrop-blur-sm text-sm px-4 py-2.5 hover:-translate-y-1 transition-all flex items-center gap-2">
@@ -66,10 +66,10 @@ function App() {
                         </div>
                     </div>
                     <div className="w-full md:w-1/2 max-w-[200px] lg:max-w-[280px] relative flex justify-center md:justify-end mt-6 md:mt-0 mx-auto md:mx-0">
-                        <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-xl border-4 md:border-8 border-white/50 backdrop-blur-sm">
+                        <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-xl backdrop-blur-sm">
                             <img 
-                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" 
-                                alt="Creative Developer Portrait" 
+                                src="https://jrandmaa.github.io/images/avatar.jpg" 
+                                alt="Developer Portrait" 
                                 className="w-full h-full object-cover"
                             />
                         </div>
@@ -81,8 +81,6 @@ function App() {
 
             <ProjectGallery />
         </main>
-
-        <Footer />
       </div>
     );
   } catch (error) {

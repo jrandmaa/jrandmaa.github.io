@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Jack Randmaa Art Portfolio</title>
+				<meta name="keywords" content="portfolio, gallery, images, videos, webm, creative">
+
+					<script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+					<script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+					<script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+					<script src="https://cdn.tailwindcss.com"></script>
+					<link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+						<style type="text/tailwindcss">
+							@layer theme {
+							:root {
+							--primary: #1a361c;
+							--secondary: #263327;
+							--accent: #84a57a;
+							--accent2: #44583e
+							--bg-light: #f9fafb;
+							--bg-white: #ffffff;
+							}
+							}
+
+							@layer base {
+							body {
+							font-family: 'Inter', sans-serif;
+							background-color: var(--bg-light);
+							background-image: url('images/Backgrounds/GrayBG.png?auto=format&fit=crop&w=2560&q=80');
+							background-size: cover;
+							background-position: center;
+							background-attachment: fixed;
+							color: var(--primary);
+							}
+							}
+
+							@layer components {
+							.btn {
+							@apply inline-flex items-center justify-center px-4 py-2 rounded-md font-medium transition-colors duration-200;
+							}
+							.btn-primary {
+							@apply bg-[var(--primary)] text-white hover:bg-opacity-90;
+							}
+							.btn-outline {
+							@apply border border-[var(--primary)] text-[var(--primary)] hover:bg-gray-100;
+							}
+							}
+							@layer utilities {
+							.animate-fade-in {
+							animation: fadeIn 0.4s ease-in-out forwards;
+							}
+							@keyframes fadeIn {
+							from { opacity: 0; transform: translateY(5px); }
+							to { opacity: 1; transform: translateY(0); }
+							}
+							}
+						</style>
+					</head>
+	<body>
+		<div id="root"></div>
+		<script type="text/babel" src="components/Header.js"></script>
+		<script type="text/babel" src="components/Footer.js"></script>
+		<script type="text/babel" src="components/MediaModal.js"></script>
+		<script type="text/babel" src="components/GameDevGalleryGrid.js"></script>
+		<script type="text/babel" src="gallery-app.js"></script>
+	</body>
+</html>

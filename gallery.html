@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack Randmaa</title>
-
+    <title>Gallery - Creative Portfolio</title>
+    <meta name="description" content="View our rich media gallery featuring images and videos.">
+    <meta name="keywords" content="portfolio, gallery, images, videos, webm, creative">
     
     <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
     <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
@@ -13,21 +14,22 @@
     <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
 
     <style type="text/tailwindcss">
-    @layer theme {
-        :root {
-            --primary: #111827;
-            --secondary: #4b5563;
-            --accent: #3b82f6;
-            --bg-light: #f9fafb;
-            --bg-white: #ffffff;
-        }
-    }
+		@layer theme {
+		:root {
+		--primary: #1a361c;
+		--secondary: #263327;
+		--accent: #84a57a;
+		--accent2: #44583e
+		--bg-light: #f9fafb;
+		--bg-white: #ffffff;
+		}
+		}
 
-    @layer base {
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-light);
-            background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=2560&q=80');
+		@layer base {
+		body {
+		font-family: 'Inter', sans-serif;
+		background-color: var(--bg-light);
+		background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=2560&q=80');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -45,15 +47,6 @@
         .btn-outline {
             @apply border border-[var(--primary)] text-[var(--primary)] hover:bg-gray-100;
         }
-        .filter-btn {
-            @apply px-4 py-2 rounded-full text-sm font-medium transition-all;
-        }
-        .filter-btn.active {
-            @apply bg-[var(--primary)] text-white;
-        }
-        .filter-btn.inactive {
-            @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
-        }
     }
     @layer utilities {
         .animate-fade-in {
@@ -68,13 +61,10 @@
 </head>
 <body>
     <div id="root"></div>
-    <script type="text/babel" src="components/Carousel.js"></script>
-    <script type="text/babel" src="components/ProjectCard.js"></script>
-    <script type="text/babel" src="components/ProjectGallery.js"></script>
     <script type="text/babel" src="components/Header.js"></script>
     <script type="text/babel" src="components/Footer.js"></script>
-    <script type="text/babel" src="components/AboutBlurb.js"></script>
-    <script type="text/babel" src="components/AnimatedTitle.js"></script>
-    <script type="text/babel" src="app.js"></script>
+    <script type="text/babel" src="components/MediaModal.js"></script>
+    <script type="text/babel" src="components/GalleryGrid.js"></script>
+    <script type="text/babel" src="gallery-app.js"></script>
 </body>
 </html>

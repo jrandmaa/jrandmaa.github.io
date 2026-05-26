@@ -1,18 +1,18 @@
 function AnimatedTitle() {
     try {
-        const titles = ["Creative Developer", "UI/UX Designer", "Frontend Engineer", "Digital Artist"];
+        const titles = ["Software Engineer", "Game Developer", "Technical Artist", "Frontend Engineer", "Digital Artist"];
         const [currentIndex, setCurrentIndex] = React.useState(0);
 
         React.useEffect(() => {
             const interval = setInterval(() => {
                 setCurrentIndex((prev) => (prev + 1) % titles.length);
-            }, 5000);
+            }, 2500);
             return () => clearInterval(interval);
         }, [titles.length]);
 
         return (
             <span 
-                className="relative inline-block overflow-hidden align-bottom w-[250px] md:w-[320px] lg:w-[400px] h-[1.2em] text-[var(--accent)]" 
+                className="relative inline-block overflow-hidden align-bottom w-[350px] md:w-[420px] lg:w-[500px] h-[1.4em] text-[var(--accent)]" 
                 data-name="animated-title" 
                 data-file="components/AnimatedTitle.js"
             >
