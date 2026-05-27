@@ -16,8 +16,8 @@ function GalleryGrid() {
             {
                 id: 2,
                 type: 'image',
-                url: 'images/portfolio/Portrait.JPG',
-                thumbnail: 'images/portfolio/Portrait.JPG?auto=format&fit=crop&w=400&q=80',
+                url: 'images/portfolio/Portrait.jpg',
+                thumbnail: 'images/portfolio/Portrait.jpg?auto=format&fit=crop&w=400&q=80',
                 title: 'Portrait',
                 category: 'Traditional Art',
                 description: 'UC Berkeley, 2020'
