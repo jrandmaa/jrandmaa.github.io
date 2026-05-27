@@ -41,7 +41,7 @@ function ProjectGallery() {
                 slides: [
                     {
                         type: 'image',
-                        url: 'images/portfolio/msgrass2.png?auto=format&fit=crop&w=800&q=80&',
+                        url: 'images/portfolio/msgrass2.PNG?auto=format&fit=crop&w=800&q=80&',
                         description: 'Personal Game Dev Projects'
                     }
                 ]
