@@ -30,6 +30,15 @@ function GalleryGrid() {
                 title: 'GPU-Instanced grass',
                 category: 'Game Dev',
                 description: 'GPU-Instanced grass for an open-world game project in Unity. Batches of sprites are drawn with a single draw call, and occluded sprites are reused as needed, allowing for a seemingly infinite field of grass that runs smoothly on lower-end PCs. 2024'
+            },
+            {
+                id: 4,
+                type: 'video',
+                url: 'video/EgregorePreview.webm',
+                thumbnail: 'video/thumbs/EgregoreThumb.png?auto=format&fit=crop&w=400&q=80',
+                title: 'Game project preview',
+                category: 'Game Dev',
+                description: 'In-progress independent game project. Stay tuned!'
             }
         ];
 
