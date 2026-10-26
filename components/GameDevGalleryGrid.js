@@ -34,7 +34,7 @@ function GalleryGrid() {
             {
                 id: 4,
                 type: 'video',
-                url: 'video/EgregorePreview.webm',
+                url: 'video/EgregoreTechDemo.mov',
                 thumbnail: 'video/thumbs/EgregoreThumb.png?auto=format&fit=crop&w=400&q=80',
                 title: 'Game project preview',
                 category: 'Game Dev',
